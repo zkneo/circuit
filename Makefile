@@ -14,7 +14,7 @@
 
 #################################circuit and input####################################
 10_compile:
-	npx circom circuit.circom --r1cs --wasm -p bls12381
+	npx circom circuit.circom --r1cs --wasm --sym -p bls12381
 11_info:
 	npx snarkjs r1cs info circuit.r1cs
 12_print:
